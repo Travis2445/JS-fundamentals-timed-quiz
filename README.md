@@ -8,8 +8,10 @@ To create an application that allows a user to take a timed quiz on JavaScript f
 * CSS
 * HTML
 
+## Screenshot
+
 ## Website
-PLACEHOLDER
+https://travis2445.github.io/JS-fundamentals-timed-quiz/
 
 ## Contribution
 Made with ❤️ by Travis2445
