@@ -136,15 +136,15 @@ function resetGame() {
 
 }
 
-//Deduct 15 seconds from the timer if user guesses wrong
+//Deduct 10 seconds from the timer if user guesses wrong
 function incorrect() {
-    timeLeft -=15;
+    timeLeft -=10;
     next();
 }
 
-//Increase the score by 20 if the user guesses right
+//Increase the score by 25 if the user guesses right
 function correct() {
-    score += 20;
+    score += 25;
     next()
 }
 
