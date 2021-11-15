@@ -3,7 +3,7 @@
 
 // formatting for #quiz-body
 const quizBodyEl = document.querySelector("#quiz-body");
-quizBodyEl.classList.add("d-flex", "flex-column", "min-vh-100", "justify-content-center", "align-items-center", "bg-dark")
+quizBodyEl.classList.add("d-flex", "flex-column", "min-vh-100", "justify-content-center", "align-items-center", "bg-dark");
 
 // Array of the quiz questions, the choices to choose from, and the correct answer
 const questions = [
@@ -32,7 +32,7 @@ const questions = [
         choices: ["charAt()", "charCodeAt()", "concat()", "indexOf()"],
         answer: "charAt()"
     }
-]
+];
 
 // Declaring the numerical values of my score and timer functions
 var score = 0;
@@ -145,7 +145,7 @@ function incorrect() {
 //Increase the score by 25 if the user guesses right
 function correct() {
     score += 25;
-    next()
+    next();
 }
 
 // This function loops through the questions
@@ -157,7 +157,7 @@ function next() {
         return;
     }
 
-    var quizContent = "<h2 class='text-white text-center'>" + questions[currentQuestion].title + "</h2>"
+    var quizContent = "<h2 class='text-white text-center'>" + questions[currentQuestion].title + "</h2>";
 
     for (var buttonLoop = 0; buttonLoop < questions[currentQuestion].choices.length; buttonLoop++) {        
         var buttonCode = "<button class='btn btn-light my-1' onclick=\"[ANS]\">[CHOICE]</button>";         
@@ -168,7 +168,7 @@ function next() {
         } else { 
                buttonCode = buttonCode.replace("[ANS]", "incorrect()");       
             }        
-             quizContent += buttonCode   
+             quizContent += buttonCode;
     }
     
     document.getElementById("quiz-body").innerHTML = quizContent;
