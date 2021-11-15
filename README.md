@@ -9,6 +9,7 @@ To create an application that allows a user to take a timed quiz on JavaScript f
 * HTML
 
 ## Screenshot
+![Screen Shot of Page](assets/images/screenshot.png)
 
 ## Website
 https://travis2445.github.io/JS-fundamentals-timed-quiz/
