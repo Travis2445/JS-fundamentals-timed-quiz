@@ -4,20 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>this JS quiz</title>
+    <title>another JS quiz</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
 <body>
-    <div class="d-flex flex-column min-vh-100 justify-content-center align-items-center bg-dark">
-        <h1 class="text-white display-3">this <span class="text-white-50">JS</span> quiz</h1>
-        <p class="lead text-light">a simple JavaScript quiz built using HTML, CSS, JavaScript, and Bootstrap.</p>
-        <div>
-            <button class="btn btn-light btn-width">begin</button>
-            <button class="btn btn-light btn-width">highScores</button>
+    <div class="timer-holder d-flex flex-column justify-content-center align-items-center bg-dark">
+        <h3 id="timer-toggle" class="text-muted display-4 rounded px-4 d-none">Time: <span id="timeLeft">0</span></h3>
+    </div>
+    <div class="container-fluid px-0">
+        <div id="quiz-body">
+            <div class="d-flex flex-column min-vh-100 justify-content-center align-items-center bg-dark">
+                <h1 class="text-white display-3">another <a href="https://www.javascript.com/" class="text-decoration-none"><span class="text-dark bg-warning ">JS</span></a> quiz</h1>
+                <p class="lead text-light">a simple JavaScript quiz built using HTML, CSS, JavaScript, and Bootstrap.</p>
+                <div>
+                    <button class="btn btn-light btn-width" onclick="start()">begin</button>
+                    <a class="highscoreLink" onclick="getScore()" href="#"><button class="btn btn-light btn-width">highScore</button></a>
+                </div>
+            </div>
         </div>
     </div>
-    
+        
 <script src="./assets/js/script.js" />
 </body>
 </html>
